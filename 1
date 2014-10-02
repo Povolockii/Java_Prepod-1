@@ -1,0 +1,154 @@
+/**
+ * Created by 1 on 23.09.2014.
+ */
+
+import sun.applet.Main;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Dog {
+    public static void Method1() throws Exception {
+        System.out.println("спим");
+        System.out.println("проснуться?");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in;
+        in = reader.readLine();
+
+        if (in.equals("да")) {
+            Method2();
+        } else {
+            Method3();
+        }
+    }
+
+
+    public static void Method2() throws Exception {
+        System.out.println("сегодня будни?");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in;
+        in = reader.readLine();
+        if (in.equals("да")) {
+            Method4();
+        } else {
+            Method3();
+        }
+        Method4();
+    }
+
+
+    public static void Method3() throws Exception {
+        System.out.println("отдыхать");
+        Method1();
+
+    }
+
+    public static void Method4() throws Exception {
+        System.out.println("идти в универ");
+        Method5();
+    }
+
+    public static void Method5() throws Exception {
+        System.out.println("есть ли еще пары");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in3;
+        in3 = reader.readLine();
+        if (in3.equals("да")) {
+            Method6();
+        } else {
+            Method7();
+        }
+    }
+
+    public static void Method6() throws Exception {
+        System.out.println("идти на пары");
+        Method8();
+    }
+
+    public static void Method7() throws Exception {
+        System.out.println("идти на работу");
+        Method9();
+    }
+
+    public static void Method8() throws Exception {
+        System.out.println("учить студентов");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in3;
+        in3 = reader.readLine();
+        if (in3.equals("да")) {
+            Method5();
+        } else {
+            Method8();
+        }
+    }
+
+    public static void Method9() throws Exception {
+        System.out.println("работать");
+        Method10();
+    }
+
+    public static void Method10() throws Exception {
+        System.out.println("закончилась работа?");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in3;
+        in3 = reader.readLine();
+        if (in3.equals("да")) {
+            Method11();
+        } else {
+            Method9();
+        }
+    }
+
+    public static void Method11() throws Exception {
+        System.out.println("идти домой");
+        Method12();
+    }
+
+    public static void Method12() throws Exception {
+        System.out.println("проверить есть ли работы на проверку?");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in3;
+        in3 = reader.readLine();
+        if (in3.equals("да")) {
+            Method13();
+        } else {
+            Method14();
+        }
+    }
+
+    public static void Method13() throws Exception {
+        System.out.println("проверять работы");
+        Method15();
+    }
+
+    public static void Method15() throws Exception {
+        System.out.println("проверил?");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String in3;
+        in3 = reader.readLine();
+        if (in3.equals("да")) {
+            Method14();
+        } else {
+            Method13();
+        }
+    }
+
+    public static void Method14() throws Exception {
+        System.out.println("отдыхать");
+        Method16();
+    }
+
+    public static void Method16() throws Exception {
+        System.out.println("заснуть");
+        Method1();
+    }
+
+
+    public static void main(String[] args) throws Exception
+    {
+        Method1();
+    }
+
+}
